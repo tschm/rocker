@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  rconda:
+     build:
+       context: .
+       dockerfile: Dockerfile
+     environment:
+       - PASSWORD=123
+     volumes:
+       - ./scripts:/home/rstudio/kitematic
+

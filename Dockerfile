@@ -7,3 +7,5 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libglpk-dev \
     && install2.r -r "https://cloud.r-project.org" --error --deps TRUE \
     CVXR
+
+ENV DISABLE_AUTH=true

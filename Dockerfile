@@ -5,7 +5,13 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libmpfr4 \
     libmpfr-dev \
     libglpk-dev \
+    liblzma-dev \
+    libbz2-dev \
+    default-jdk \
     && install2.r -r "https://cloud.r-project.org" --error --deps TRUE \
-    CVXR
+    CVXR \
+    tidyquant \
+    tidyverse \
+    XLConnect 
 
 ENV DISABLE_AUTH=true
